@@ -1,0 +1,24 @@
+{
+  "name": "ESIII-Atividade-1",
+  "version": "1.0.0",
+  "description": "Primeira atividade de Engenharia de Software III",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelOchoaMello/ESIII-Atividade-1.git"
+  },
+  "keywords": [],
+  "author": "Rafael Ochôa Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelOchoaMello/ESIII-Atividade-1/issues"
+  },
+  "homepage": "https://github.com/rafaelOchoaMello/ESIII-Atividade-1#readme",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "prompt-sync": "^4.2.0"
+  }
+}
