@@ -12,7 +12,7 @@ function LoadData() {
     const maxLastPurchaseDate = input('> Favor informar limite de anos comprados :: ');
     const maxCountPurchaseAmount = input('> Favor informar limite de produtos comprados :: ');
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 1000; i++) {
         const newData = {
             name: Faker.name.findName(),
             birthday: Faker.date.between('1910', '2019'),
