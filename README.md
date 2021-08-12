@@ -10,14 +10,18 @@
   <h2> :memo: Sobre </h2>
   <p>
     Primeira atividade da cadeira, apresentada em <strong>10/08/2021</strong>,
-    o repositório contendo os detalhes sobre a mesma se encontra em : https://github.com/angelogluz/ES6/blob/master/arrays.md
+    o repositório contendo os detalhes sobre a mesma se encontra em :
+    <br>
+    https://github.com/angelogluz/ES6/blob/master/arrays.md
   </p>
   <p>
     Como indicado pelo professor, utilizamos o Faker para a geração dos dados, sendo estes localizados para pt-Br 
+    <br>
     https://github.com/marak/Faker.js/
   </p>
   <p>
     Para a leitura dos inputs desejados, utilizamos o Prompt-Sync 
+    <br>
     https://github.com/heapwolf/prompt-sync
   </p>
 </p>
