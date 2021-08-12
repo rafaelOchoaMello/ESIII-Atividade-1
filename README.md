@@ -31,7 +31,7 @@
    <p>
         O objetivo principal é aplicar os conhecimentos sobre a manipulação de arrays em Javascrips, em foco, os métodos
         <br>
-        <strong>'.Map'</strong> - <strong>'.Filter'</strong> - <strong>'.reduce'</strong>  - <strong>'.find'</strong>
+        <strong>'.map'</strong> - <strong>'.filter'</strong> - <strong>'.reduce'</strong>  - <strong>'.find'</strong>
    </p>
    <p>
         É importante notar, que não houve nenhum tratamento sobre os valores recebidos nos inputs, mesmo que isto seja
