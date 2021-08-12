@@ -22,8 +22,26 @@ function LoadData() {
         }
         fakerData.push(newData);
     }
-    console.log('-----------------------------------------------------------\n');
+    console.log('-----------------------------------------------------------');
 }
 
 LoadData();
-console.log(fakerData); 
+
+/* < Exc 1 > - Desenvolva, utilizando filter , uma função que, dado um caractere de entrada,
+retorne todos os registros de clientes cujo o nome inicia com o caractere. */
+console.log('[Exercício 1] --- ');
+function excOne() {
+    const initialLetter = input('> Informe a letra inicial :: ');
+    const data = fakerData.filter( (data) => data.name[0].toLowerCase() === initialLetter[0].toLowerCase() );
+
+    return data;
+}
+const excOne_results = excOne();
+
+/* < Exc 2 > - Retorne o array de clientes */
+console.log('[Exercício 2] --- ');
+function excTwo () {
+    const data =  fakerData.map( (data) => data );
+    return data;
+}
+const excTwo_results = excTwo();
