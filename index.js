@@ -79,4 +79,15 @@ function excFour() {
     return data;
 }
 const excFour_results = excFour();
-console.log(excFour_results);
+/* console.log(excFour_results); */
+
+
+/* < Exc 5 > -----------------------------------------------------------------
+Desenvolva uma função que retorne apenas o primeiro nome dos clientes. */
+console.log('[Exercício 5] --- ');
+function excFive() {
+    const data = fakerData.map((data) => data.name.split(' ')[0]);
+    return data;
+}
+const excFive_results = excFive();
+console.log(excFive_results);
