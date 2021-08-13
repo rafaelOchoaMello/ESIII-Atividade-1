@@ -70,3 +70,13 @@ function excThre() {
 const excThre_results = excThre();
 console.log(`Exercício 1 (length) : ${excOne_results.length} || Exercício 3 (resultado) : ${excThre_results}`);
 
+
+/* < Exc 4 > -----------------------------------------------------------------
+Desenvolva uma função que retorne apenas os nomes dos clientes. */
+console.log('[Exercício 4] --- ');
+function excFour() {
+    const data = fakerData.map((data) => data.name);
+    return data;
+}
+const excFour_results = excFour();
+console.log(excFour_results);
