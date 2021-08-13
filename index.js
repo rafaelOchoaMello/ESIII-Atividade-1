@@ -1,5 +1,5 @@
 const Faker = require('faker');
-const Prompt  = require('prompt-sync');
+const Prompt = require('prompt-sync');
 
 const input = Prompt();
 Faker.locale = 'pt_BR';
@@ -27,21 +27,46 @@ function LoadData() {
 
 LoadData();
 
-/* < Exc 1 > - Desenvolva, utilizando filter , uma função que, dado um caractere de entrada,
+/* < Exc 1 > -----------------------------------------------------------------
+ Desenvolva, utilizando filter , uma função que, dado um caractere de entrada,
 retorne todos os registros de clientes cujo o nome inicia com o caractere. */
 console.log('[Exercício 1] --- ');
 function excOne() {
     const initialLetter = input('> Informe a letra inicial :: ');
-    const data = fakerData.filter( (data) => data.name[0].toLowerCase() === initialLetter[0].toLowerCase() );
+    const data = fakerData.filter((data) => data.name[0].toLowerCase() === initialLetter[0].toLowerCase());
 
     return data;
 }
 const excOne_results = excOne();
+/* console.log(excOne_results); */
 
-/* < Exc 2 > - Retorne o array de clientes */
+
+/* < Exc 2 > -----------------------------------------------------------------
+ Retorne o array de clientes */
 console.log('[Exercício 2] --- ');
-function excTwo () {
-    const data =  fakerData.map( (data) => data );
+function excTwo() {
+    const data = fakerData.map((data) => data);
     return data;
 }
 const excTwo_results = excTwo();
+/* console.log(excTwo_results); */
+
+
+/* < Exc 3 > -----------------------------------------------------------------
+ Desenvolva uma função que, dado o caractere de entrada, retorna apenas um número
+com o total de registros encontrados. */
+console.log('[Exercício 3] --- ');
+function excThre() {
+    const initialLetter = input('> Informe a letra inicial :: ');
+    const data = fakerData.reduce((count, data) => {
+        data.name[0].toLowerCase() === initialLetter[0].toLowerCase()
+            ? count++
+            : count
+        return count;
+    }, 0);
+
+    return data;
+}
+const excThre_results = excThre();
+console.log(`Exercício 1 (length) : ${excOne_results.length} || Exercício 3 (resultado) : ${excThre_results}`);
+
