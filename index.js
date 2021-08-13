@@ -90,4 +90,18 @@ function excFive() {
     return data;
 }
 const excFive_results = excFive();
-console.log(excFive_results);
+/* console.log(excFive_results);  */
+
+/* < Exc 6 > -----------------------------------------------------------------
+Desenvolva uma função que retorne apenas o primeiro nome dos clientes cujo os nomes
+começam com o caractere de entrada da função. */
+console.log('[Exercício 6] --- ');
+function excSix() {
+    const initialLetter = input('> Informe a letra inicial :: ');
+    const data = fakerData.filter((data) => data.name[0].toLowerCase() === initialLetter[0].toLowerCase())
+        .map((data) => data.name.split(' ')[0]);
+
+    return data;
+}
+const excSix_results = excSix();
+console.log(excSix_results);
