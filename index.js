@@ -108,6 +108,7 @@ console.log(excSix_results);
 
 /* < Exc 7 > -----------------------------------------------------------------
 Desenvolva uma função que retorne todos os usuários que são maiores de idade.*/
+console.log('[Exercício 7] --- ');
 function excSeven() {
     const date = new Date();
     const currentYear = parseInt(date.getFullYear());
@@ -121,11 +122,24 @@ const excSeven_results = excSeven();
 
 /* < Exc 8 > -----------------------------------------------------------------
 Desenvolva uma função que, dado um nome de entrada, retorna se o nome está contido na lista.*/
-function excEight(){
+console.log('[Exercício 8] --- ');
+function excEight() {
     const nameToFind = input('> Favor informar o nome a ser pesquisado :: ');
-    const data = fakerData.find( (data) => data.name.split(' ')[0].toString().toLowerCase() === nameToFind.toLocaleLowerCase() );
+    const data = fakerData.find((data) => data.name.split(' ')[0].toString().toLowerCase() === nameToFind.toLocaleLowerCase());
 
-    return typeof data !== 'undefined' ?  true : false 
+    return typeof data !== 'undefined' ? true : false
 }
 const excEight_results = excEight();
 console.log(excEight_results);
+
+
+/* < Exc 9 > -----------------------------------------------------------------
+Implemente uma função que retorna o total de vendas realizadas somando as compras de todos os clientes. */
+console.log('[Exercício 9] --- ');
+function excNine() {
+    const data = fakerData.reduce((count, data) => count + data.countPurchase, 0);
+    return data;
+}
+const excNine_results = excNine();
+console.log(excNine_results);
+
