@@ -118,3 +118,14 @@ function excSeven() {
 }
 const excSeven_results = excSeven();
 /* console.log(excSeven_results); */
+
+/* < Exc 8 > -----------------------------------------------------------------
+Desenvolva uma função que, dado um nome de entrada, retorna se o nome está contido na lista.*/
+function excEight(){
+    const nameToFind = input('> Favor informar o nome a ser pesquisado :: ');
+    const data = fakerData.find( (data) => data.name.split(' ')[0].toString().toLowerCase() === nameToFind.toLocaleLowerCase() );
+
+    return typeof data !== 'undefined' ?  true : false 
+}
+const excEight_results = excEight();
+console.log(excEight_results);
