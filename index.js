@@ -105,3 +105,16 @@ function excSix() {
 }
 const excSix_results = excSix();
 console.log(excSix_results);
+
+/* < Exc 7 > -----------------------------------------------------------------
+Desenvolva uma função que retorne todos os usuários que são maiores de idade.*/
+function excSeven() {
+    const date = new Date();
+    const currentYear = parseInt(date.getFullYear());
+
+    const data = fakerData.filter((data) => (currentYear - parseInt(data.birthday.toString().split(' ')[3])) >= 18);
+
+    return data;
+}
+const excSeven_results = excSeven();
+/* console.log(excSeven_results); */
