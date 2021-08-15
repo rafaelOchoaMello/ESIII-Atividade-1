@@ -143,3 +143,30 @@ function excNine() {
 const excNine_results = excNine();
 console.log(excNine_results);
 
+/* < Exc 10 > -----------------------------------------------------------------
+Implemente uma função que retorne os dados dos clientes que não compram há mais de 1 ano. */
+console.log('[Exercício 10] --- ');
+function excTen() {
+    const date = new Date();
+    const currentYear = parseInt(date.getFullYear());
+
+    const data = fakerData.filter((data) =>
+        (currentYear - parseInt(data.lastPurchaseDate.toString().split('-')[0].split(' ')[3])) > 1
+    );
+
+    return data;
+};
+const excTen_results = excTen();
+/* console.log(excTen_results);
+ */
+/* < Exc 11 > -----------------------------------------------------------------
+Implemente uma função que retorne os dados dos clientes que já realizaram mais de 15 compras. */
+console.log('[Exercício 11] --- ');
+function excEleven() {
+
+
+    const data = fakerData.filter((data) => { });
+
+    return data;
+}
+const excEleven_results = excEleven();
