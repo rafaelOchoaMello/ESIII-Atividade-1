@@ -143,6 +143,7 @@ function excNine() {
 const excNine_results = excNine();
 console.log(excNine_results);
 
+
 /* < Exc 10 > -----------------------------------------------------------------
 Implemente uma função que retorne os dados dos clientes que não compram há mais de 1 ano. */
 console.log('[Exercício 10] --- ');
@@ -157,16 +158,16 @@ function excTen() {
     return data;
 };
 const excTen_results = excTen();
-/* console.log(excTen_results);
- */
+
+
+/* console.log(excTen_results); */
 /* < Exc 11 > -----------------------------------------------------------------
 Implemente uma função que retorne os dados dos clientes que já realizaram mais de 15 compras. */
 console.log('[Exercício 11] --- ');
 function excEleven() {
-
-
-    const data = fakerData.filter((data) => { });
+    const data = fakerData.filter((data) => data.countPurchase > 15);
 
     return data;
 }
 const excEleven_results = excEleven();
+console.log(excEleven_results);
