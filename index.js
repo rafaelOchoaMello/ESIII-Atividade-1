@@ -16,7 +16,7 @@ function LoadData() {
         const newData = {
             name: Faker.name.findName(),
             birthday: Faker.date.between('1910', '2019'),
-            genre: Faker.music.genre(),
+            genre: Faker.name.genre(),
             lastPurchaseDate: Faker.date.past(parseInt(maxLastPurchaseDate)),
             countPurchase: Faker.datatype.number(parseInt(maxCountPurchaseAmount), 1)
         }
